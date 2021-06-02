@@ -14,7 +14,8 @@ class ChiffreController extends Controller
      */
     public function index()
     {
-        //
+        $chiffre = Chiffre::all();
+        return view("backoffice.chiffre.all", compact("chiffres"));
     }
 
     /**
@@ -24,7 +25,7 @@ class ChiffreController extends Controller
      */
     public function create()
     {
-        //
+        return view("backoffice.chiffre.create");
     }
 
     /**
@@ -35,7 +36,13 @@ class ChiffreController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $chiffre = new Chiffre();
+        $chiffre->figure = $request->figure;
+        $chiffre->text = $request->text;
+        $chiffre->save();
+
+        return redirect()->route("chiffre.index")->with("successMessage", "Votre chiffre à bien été ajouté");
+
     }
 
     /**
@@ -46,7 +53,7 @@ class ChiffreController extends Controller
      */
     public function show(Chiffre $chiffre)
     {
-        //
+        return view("backoffice.chiffre.show", compact("chiffre"));
     }
 
     /**
@@ -57,7 +64,8 @@ class ChiffreController extends Controller
      */
     public function edit(Chiffre $chiffre)
     {
-        //
+        return view("backoffice.chiffre.edit", compact("chiffre"));
+
     }
 
     /**
@@ -69,7 +77,11 @@ class ChiffreController extends Controller
      */
     public function update(Request $request, Chiffre $chiffre)
     {
-        //
+        $chiffre->figure = $request->figure;
+        $chiffre->text = $request->text;
+
+        $chiffre->save();
+        return redirect()->route("chiffre.index")->with("successMessage", "Votre chiffre à bien été modifié");
     }
 
     /**
@@ -80,6 +92,7 @@ class ChiffreController extends Controller
      */
     public function destroy(Chiffre $chiffre)
     {
-        //
+       $chiffre->delete();
+       return redirect()->back()->with("successMessage", "Votre chiffre à bien été suprimmé");
     }
 }

@@ -12,8 +12,8 @@ class Chiffre extends Model
     protected $table = "chiffres";
 
     protected $fillable = [
-        "nombre",
-        "texte",
+        "figure",
+        "text",
     ];
 
     
