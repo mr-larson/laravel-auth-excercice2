@@ -10,22 +10,22 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="public/img/favicon.png" rel="icon">
-  <link href="public/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="public/vendor/aos/aos.css" rel="stylesheet">
-  <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="public/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="public/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="public/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="public/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="public/css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Techie - v4.1.0
@@ -47,15 +47,15 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="public/vendor/aos/aos.js"></script>
-  <script src="public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="public/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="public/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="public/vendor/php-email-form/validate.js"></script>
-  <script src="public/vendor/purecounter/purecounter.js"></script>
-  <script src="public/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/purecounter/purecounter.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="public/js/main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
