@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ChiffreController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\TemoignageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +25,15 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+
+//Chiffre
+// Route::resource("/chiffre", ChiffreController::class);
+
+//Chiffre
+// Route::resource("/service", ServiceController::class);
+
+//Temoignage
+// Route::resource("/temoignage", TemoignageController::class);
+
+

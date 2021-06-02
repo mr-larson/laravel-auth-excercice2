@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Chiffre extends Model
 {
     use HasFactory;
+
+    protected $table = "chiffres";
+
+    protected $fillable = [
+        "nombre",
+        "texte",
+    ];
+
+    
 }

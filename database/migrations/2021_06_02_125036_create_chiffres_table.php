@@ -15,9 +15,13 @@ class CreateChiffresTable extends Migration
     {
         Schema::create('chiffres', function (Blueprint $table) {
             $table->id();
+            $table->string("figure");
+            $table->string("text");
             $table->timestamps();
         });
     }
+   
+
 
     /**
      * Reverse the migrations.
