@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -57,6 +57,8 @@
   <script src="vendor/php-email-form/validate.js"></script>
   <script src="vendor/purecounter/purecounter.js"></script>
   <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="{{ asset('js/app.js') }}" defer></script>
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
