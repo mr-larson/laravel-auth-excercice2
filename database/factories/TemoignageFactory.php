@@ -25,7 +25,7 @@ class TemoignageFactory extends Factory
             'text' => $this->faker->realText(200),
             'author' => $this->faker->name(),
             'position' => $this->faker->jobTitle (),
-            'photo' => $this->faker->unique()->file("resources/img/personns", "public/img/personns", false), 
+            'photo' => $this->faker->unique()->file("resources/img/testimonials", "public/img/testimonials", false), 
         ];
 
 
