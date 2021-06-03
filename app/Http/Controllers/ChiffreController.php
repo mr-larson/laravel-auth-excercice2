@@ -14,8 +14,8 @@ class ChiffreController extends Controller
      */
     public function index()
     {
-        $chiffre = Chiffre::all();
-        return view("backoffice.chiffre.all", compact("chiffres"));
+        $chiffres = Chiffre::all();
+        return view("backoffice.counts.all", compact("chiffres"));
     }
 
     /**
@@ -25,7 +25,7 @@ class ChiffreController extends Controller
      */
     public function create()
     {
-        return view("backoffice.chiffre.create");
+        return view("backoffice.counts.create");
     }
 
     /**
