@@ -19,10 +19,7 @@
                     </p>
                 </div>    
             </div>
-
             @endforeach
-          
-    
 
         </div>
     </div>
@@ -52,11 +49,8 @@
                               {!! $service->shape !!}
                             </svg>
                             <i class="{{ $service->icon }}"></i>
-                          </div>
-                    </div>
-                    <div class="flex justify-center items-start ">
-                        <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
-                    </div>    
+                        </div>
+                    </div>   
                 </div>
             @endforeach
             
@@ -82,12 +76,8 @@
                     <p class="text-gray-700 text-base">
                         {{ $temoignage->position }}
                     </p>
-                </div>
-                <div class="flex justify-center items-start ">
-                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
-                </div>    
+                </div>   
             </div>
-           
             @endforeach
 
         </div>
