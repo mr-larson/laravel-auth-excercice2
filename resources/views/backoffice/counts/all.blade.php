@@ -19,7 +19,7 @@
                         <p class="text-gray-700 text-base">
                             {{ $chiffre->text }}
                         </p>
-                        <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                        <a href="{{route('chiffre.edit',$chiffre->id) }}" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
                         <a href="" class="text-center border-2 border-red-300 text-red-300 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-red-500 hover:text-red-500">Delete</a>
                     </div>
                 </div>

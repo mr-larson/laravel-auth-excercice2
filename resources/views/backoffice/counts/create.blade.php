@@ -16,13 +16,13 @@
                 <select class="custom-select px-3 py-1 w-full rounded-md" name="figure">
                     <option selected>choisisse une figure</option>
                     @foreach ($chiffres as $chiffre)
-                        <option {{ $chiffre->figure->id == $figure->id ? "selected" : null }} value="{{ $chiffre->id }}">{{ $chiffre->figure }}</option> 
+                        <option value="{{ $chiffre->id }}">{{ $chiffre->figure }}</option> 
                     @endforeach
                 </select>
             </div>
             <div class="m-3">
                 <label class="text-blue-600">text</label>
-                <input type="text" class="px-3 py-1 w-full rounded-md" value="{{ $chiffre->text }}" name="text">
+                <input type="text" class="px-3 py-1 w-full rounded-md" name="text">
             </div>
             <div class="flex justify-end mt-10 col-span-2">
                 <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded">Submit</button>
