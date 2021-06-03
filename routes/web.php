@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     $chiffres = Chiffre::all();
     $temoignages = Temoignage::all();
@@ -27,7 +28,10 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $chiffres = Chiffre::all();
+    $temoignages = Temoignage::all();
+    $services = Service::all();
+    return view('dashboard', compact('chiffres', 'temoignages', 'services'));
 })->middleware(['auth'])->name('dashboard');
 
 
