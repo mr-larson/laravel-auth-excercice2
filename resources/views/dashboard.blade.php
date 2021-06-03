@@ -5,45 +5,188 @@
         </h2>
     </x-slot>
 
+    <!--Section Counts-->
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="/mountain.jpg" alt="Mountain">
-                    <div class="px-6 py-4">
-                      <div class="font-bold text-xl mb-2">Mountain</div>
-                      <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                      </p>
-                    </div>
-                    <div class="px-6 pt-4 pb-2">
-                      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                    </div>
+        <h2 class="bg-blue-200 text-center p-2 mx-10 text-4xl font-bold rounded-lg shadow-lg">Section Counts</h2>
+        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5">
+
+            <!--Card 1-->
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Figure</div>
+                    <p class="text-gray-700 text-base">
+                        Text
+                    </p>
                 </div>
+                <div class="flex justify-center items-start ">
+                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                </div>    
             </div>
+
+            <!--Card 2-->
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Figure</div>
+                    <p class="text-gray-700 text-base">
+                    Text
+                    </p>
+                </div>
+                <div class="flex justify-center items-start ">
+                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                </div>  
+            </div>
+        
+            <!--Card 3-->
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Figure</div>
+                    <p class="text-gray-700 text-base">
+                    Text
+                    </p>
+                </div>
+                <div class="flex justify-center items-start ">
+                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                </div>  
+            </div>
+
+            <!--Card 4-->
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Figure</div>
+                    <p class="text-gray-700 text-base">
+                    Text
+                    </p>
+                </div>
+                <div class="flex justify-center items-start ">
+                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                </div>  
+            </div>
+
         </div>
     </div>
 
+    <!--Section Service-->
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="/mountain.jpg" alt="Mountain">
-                    <div class="px-6 py-4">
-                      <div class="font-bold text-xl mb-2">Mountain</div>
-                      <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                      </p>
-                    </div>
-                    <div class="px-6 pt-4 pb-2">
-                      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                    </div>
+        <h2 class="bg-blue-200 text-center p-2 mx-10 text-4xl font-bold rounded-lg shadow-lg">Section Service</h2>
+        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+
+            <!--Card 1-->
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">title</div>
+                    <p class="text-gray-700 text-base">
+                        Text
+                    </p>
+                    <p class="text-gray-700 text-base">
+                        Icon
+                    </p>
+                    <p class="text-gray-700 text-base">
+                        Shape
+                    </p>
                 </div>
+                <div class="flex justify-center items-start ">
+                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                </div>    
             </div>
+
+            <!--Card 2-->
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">title</div>
+                    <p class="text-gray-700 text-base">
+                        Text
+                    </p>
+                    <p class="text-gray-700 text-base">
+                        Icon
+                    </p>
+                    <p class="text-gray-700 text-base">
+                        Shape
+                    </p>
+                </div>
+                <div class="flex justify-center items-start ">
+                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                </div>  
+            </div>
+        
+            <!--Card 3-->
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">title</div>
+                    <p class="text-gray-700 text-base">
+                        Text
+                    </p>
+                    <p class="text-gray-700 text-base">
+                        Icon
+                    </p>
+                    <p class="text-gray-700 text-base">
+                        Shape
+                    </p>
+                </div>
+                <div class="flex justify-center items-start ">
+                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                </div>  
+            </div>
+
         </div>
     </div>
+
+    <!--Section Temoignage-->
+    <div class="py-12">
+        <h2 class="bg-blue-200 text-center p-2 mx-10 text-4xl font-bold rounded-lg shadow-lg">Section Temoignage</h2>
+        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+
+            <!--Card 1-->
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <img class="w-full" src="/img.jpg" alt="img">
+                    <div class="font-bold text-xl mb-2">Author</div>
+                    <p class="text-gray-700 text-base">
+                        Text
+                    </p>
+                    <p class="text-gray-700 text-base">
+                        position
+                    </p>
+                </div>
+                <div class="flex justify-center items-start ">
+                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                </div>    
+            </div>
+
+            <!--Card 2-->
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <img class="w-full" src="/img.jpg" alt="img">
+                    <div class="font-bold text-xl mb-2">Author</div>
+                    <p class="text-gray-700 text-base">
+                        Text
+                    </p>
+                    <p class="text-gray-700 text-base">
+                        position
+                    </p>
+                </div>
+                <div class="flex justify-center items-start ">
+                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                </div>  
+            </div>
+        
+            <!--Card 3-->
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <img class="w-full" src="/img.jpg" alt="img">
+                    <div class="font-bold text-xl mb-2">Author</div>
+                    <p class="text-gray-700 text-base">
+                        Text
+                    </p>
+                    <p class="text-gray-700 text-base">
+                        position
+                    </p>
+                </div>
+                <div class="flex justify-center items-start ">
+                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                </div>  
+            </div>
+
+        </div>
+    </div>
+
 </x-app-layout>
