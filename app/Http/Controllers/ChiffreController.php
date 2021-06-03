@@ -42,7 +42,7 @@ class ChiffreController extends Controller
         $chiffre->save();
 
         return redirect()->route("chiffre.index")->with("successMessage", "Votre chiffre à bien été ajouté");
-
+        
     }
 
     /**

@@ -58,6 +58,8 @@
   <script src="vendor/purecounter/purecounter.js"></script>
   <script src="vendor/swiper/swiper-bundle.min.js"></script>
 
+  <script src="{{ asset('js/app.js') }}" defer></script>
+
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
 
