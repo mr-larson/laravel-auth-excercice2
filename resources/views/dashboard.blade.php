@@ -17,9 +17,6 @@
                     <p class="text-gray-700 text-base">
                         Text
                     </p>
-                </div>
-                <div class="flex justify-center items-start ">
-                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
                 </div>    
             </div>
 
@@ -30,9 +27,6 @@
                     <p class="text-gray-700 text-base">
                     Text
                     </p>
-                </div>
-                <div class="flex justify-center items-start ">
-                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
                 </div>  
             </div>
         
@@ -43,9 +37,6 @@
                     <p class="text-gray-700 text-base">
                     Text
                     </p>
-                </div>
-                <div class="flex justify-center items-start ">
-                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
                 </div>  
             </div>
 
@@ -56,9 +47,6 @@
                     <p class="text-gray-700 text-base">
                     Text
                     </p>
-                </div>
-                <div class="flex justify-center items-start ">
-                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
                 </div>  
             </div>
 
@@ -83,10 +71,7 @@
                     <p class="text-gray-700 text-base">
                         Shape
                     </p>
-                </div>
-                <div class="flex justify-center items-start ">
-                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
-                </div>    
+                </div>  
             </div>
 
             <!--Card 2-->
@@ -102,10 +87,7 @@
                     <p class="text-gray-700 text-base">
                         Shape
                     </p>
-                </div>
-                <div class="flex justify-center items-start ">
-                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
-                </div>  
+                </div> 
             </div>
         
             <!--Card 3-->
@@ -121,9 +103,6 @@
                     <p class="text-gray-700 text-base">
                         Shape
                     </p>
-                </div>
-                <div class="flex justify-center items-start ">
-                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
                 </div>  
             </div>
 
@@ -146,9 +125,6 @@
                     <p class="text-gray-700 text-base">
                         position
                     </p>
-                </div>
-                <div class="flex justify-center items-start ">
-                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
                 </div>    
             </div>
 
@@ -163,9 +139,6 @@
                     <p class="text-gray-700 text-base">
                         position
                     </p>
-                </div>
-                <div class="flex justify-center items-start ">
-                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
                 </div>  
             </div>
         
@@ -180,10 +153,7 @@
                     <p class="text-gray-700 text-base">
                         position
                     </p>
-                </div>
-                <div class="flex justify-center items-start ">
-                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg text-white m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
-                </div>  
+                </div> 
             </div>
 
         </div>
