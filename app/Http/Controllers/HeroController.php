@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\About;
+use App\Models\Hero;
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class HeroController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $abouts = About::all();
-        return view("backoffice.abouts.all", compact("abouts"));
+        $heros = Hero::all();
+        return view("backoffice.hero.all", compact("heros"));
     }
 
     /**
@@ -25,7 +25,7 @@ class AboutController extends Controller
      */
     public function create()
     {
-        return view("backoffice.abouts.create");
+        return view("backoffice.heros.create");
     }
 
     /**
@@ -36,52 +36,48 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
-        $about = new About();
-        $about->h3 = $request->h3;
-        $about->li1 = $request->li1;
-        $about->li2 = $request->li2;
-        $about->li3 = $request->li3;
-        $about->save();
+        $hero = new Hero();
+        $hero->h1 = $request->h1;
+        $hero->h2 = $request->h2;
+        $hero->save();
 
-        return redirect()->route("about.index")->with("successMessage", "Votre chiffre à bien été ajouté");
+        return redirect()->route("hero.index")->with("successMessage", "Votre chiffre à bien été ajouté");
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\About  $about
+     * @param  \App\Models\Hero  $hero
      * @return \Illuminate\Http\Response
      */
-    public function show(About $about)
+    public function show(Hero $hero)
     {
-        return view("backoffice.about.show", compact("about"));
+        return view("backoffice.hero.show", compact("hero"));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\About  $about
+     * @param  \App\Models\Hero  $hero
      * @return \Illuminate\Http\Response
      */
-    public function edit(About $about)
+    public function edit(Hero $hero)
     {
-        return view("backoffice.about.edit", compact("about"));
+        return view("backoffice.hero.edit", compact("hero"));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\About  $about
+     * @param  \App\Models\Hero  $hero
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, About $about)
+    public function update(Request $request, Hero $hero)
     {
-        $about->h3 = $request->h3;
-        $about->li1 = $request->li1;
-        $about->li2 = $request->li2;
-        $about->li3 = $request->li3;
-        $about->save();
+        $hero->h1 = $request->h1;
+        $hero->h2 = $request->h2;
+        $hero->save();
 
         return redirect()->route("about.index")->with("successMessage", "Votre chiffre à bien été ajouté");
     }
@@ -89,12 +85,12 @@ class AboutController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\About  $about
+     * @param  \App\Models\Hero  $hero
      * @return \Illuminate\Http\Response
      */
-    public function destroy(About $about)
+    public function destroy(Hero $hero)
     {
-        $about->delete();
+        $hero->delete();
         return redirect()->back()->with("successMessage", "Votre chiffre à bien été suprimmé");
     }
 }

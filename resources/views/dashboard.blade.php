@@ -16,6 +16,25 @@
         <!--Section Counts-->
         <div class="">
             <div class="p-10 grid sm:grid-cols-1 md:grid-cols-3  gap-5 apparition">
+
+                <a href="{{ route('hero.index') }}" class="block ">
+                    <div class="rounded overflow-hidden shadow-lg py-20 flex flex-col justify-center align-center items-center"
+                        style="background: linear-gradient(
+                        45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url('{{ asset('img/hero-bg.jpg') }}'); background-size: cover;">
+                        <p class="text-white text-3xl">Héros</p>
+                        <p class="text-white opacity-50 font-light py-3">Gérer les héros</p>
+                    </div>
+                </a>
+
+                <a href="{{ route('about.index') }}" class="block ">
+                    <div class="rounded overflow-hidden shadow-lg py-20 flex flex-col justify-center align-center items-center"
+                        style="background: linear-gradient(
+                        45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url('{{ asset('img/hero-bg.jpg') }}'); background-size: cover;">
+                        <p class="text-white text-3xl">Abouts</p>
+                        <p class="text-white opacity-50 font-light py-3">Gérer les abouts</p>
+                    </div>
+                </a>
+
                 <a href="{{ route('service.index') }}" class="block ">
                     <div class="rounded overflow-hidden shadow-lg py-20 flex flex-col justify-center align-center items-center"
                         style="background: linear-gradient(

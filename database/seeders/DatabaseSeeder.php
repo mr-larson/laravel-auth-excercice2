@@ -19,5 +19,7 @@ class DatabaseSeeder extends Seeder
         Temoignage::factory(5)->create();
         $this->call(ServiceSeeder::class);
         $this->call(ChiffreSeeder::class);
+        $this->call(AboutSeeder::class);
+        $this->call(HeroSeeder::class);
     }
 }
