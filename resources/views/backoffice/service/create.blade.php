@@ -13,11 +13,10 @@
             @method('post')
             <div class="rounded overflow-hidden shadow-lg">
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">title</div>
-                    <p class="text-gray-700 text-base">
-                        Text
-                    </p>
-                    <input type="text" class="px-3 py-1 w-full rounded-md" name="title">
+                    <div class="m-3 col-span-1">
+                        <label class="text-gray-700 text-base">title</label>
+                        <input type="text" class="px-3 py-1 w-full rounded-md" name="title">
+                    </div>
 
                     <p class="text-gray-700 text-base">
                         Icon
@@ -61,10 +60,9 @@
                     </select>
                     
                 </div>
-                <div class="flex justify-center items-start ">
-                    <a href="" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg m-1 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                <div class="flex justify-end mt-10 col-span-2">
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded">Submit</button>
                 </div>    
-            </div>
         </form>
 
     </div>
