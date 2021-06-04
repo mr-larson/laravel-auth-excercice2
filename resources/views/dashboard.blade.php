@@ -28,8 +28,6 @@
                                         45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url('{{ asset('img/hero-bg.jpg') }}'); background-size: cover;">
                         <p class="text-white text-3xl">Chiffres</p>
                         <p class="text-white opacity-50 font-light py-3">Gérer les chiffres</p>
-
-
                     </div>
                 </a>
             </div>
