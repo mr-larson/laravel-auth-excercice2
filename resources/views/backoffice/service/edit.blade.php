@@ -6,6 +6,8 @@
 <!--Section Service-->
 <i class='bx bxs-user-account'></i>
 <p>qsdqsd</p>
+<i class='bx bxs-user-account'></i>
+
 <div class="py-12">
     <h2 class="bg-blue-200 text-center p-2 mx-10 text-4xl font-bold rounded-lg shadow-lg">Section Service</h2>
     <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
@@ -31,8 +33,6 @@
                         <option {{ $service->icon == "bx bx-layer" ? "selected" : null}}  value="bx bxl-dribbble"><i class="bx bx-layer"></i></option> 
                         <option {{ $service->icon == "bx bx-slideshow" ? "selected" : null}}  value="bx bxl-dribbble"><i class="bx bx-slideshow"></i></option> 
                         <option {{ $service->icon == "bx bx-arch" ? "selected" : null}}  value="bx bxl-dribbble"><i class="bx bx-arch"></i></option> 
-                   
-
                     </select>
         
                     <p class="text-gray-700 text-base">
@@ -40,7 +40,6 @@
                     </p>
                     <select class="custom-select px-3 py-1 w-full rounded-md" name="service_id">
                         <option>choisissez un Shape</option>
-
                         @foreach ($services as $item)
                             <option {{ $service->shape == $item->shape ? "selected" : null}} value="{{ $item->shape }}">Forme {{ $item->id }} </option> 
                         @endforeach
