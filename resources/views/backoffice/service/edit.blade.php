@@ -1,3 +1,8 @@
+@extends('layouts.appFront')
+
+@section('content')
+    
+
 <!--Section Service-->
 <div class="py-12">
     <h2 class="bg-blue-200 text-center p-2 mx-10 text-4xl font-bold rounded-lg shadow-lg">Section Service</h2>
@@ -16,11 +21,11 @@
                     <p class="text-gray-700 text-base">
                         Icon
                     </p>
-                    <select class="custom-select px-3 py-1 w-full rounded-md" name="service_id">
-                        <option selected>choisissez un icon</option>
-                        @foreach ($services as $service)
-                            <option value="{{ $service->id }}">{{ $service->icon }}</option> 
-                        @endforeach
+                    <select class="custom-select px-3 py-1 w-full rounded-md" name="icon">
+                        <option selected>choisissez une icone</option>
+                        <option value="bx bxl-dribbble"><i class="bx bxl-dribbble"></i></option> 
+                        <option value="bx bxl-dribbble"><i class="bx bxl-dribbble"></i></option> 
+                        <option value="bx bxl-dribbble"><i class="bx bxl-dribbble"></i></option> 
                     </select>
         
                     <p class="text-gray-700 text-base">
@@ -28,8 +33,8 @@
                     </p>
                     <select class="custom-select px-3 py-1 w-full rounded-md" name="service_id">
                         <option selected>choisissez un Shape</option>
-                        @foreach ($services as $service)
-                            <option value="{{ $service->id }}">{{ $service->shape }}</option> 
+                        @foreach ($services as $item)
+                            <option value="{{ $item->shape }}">Forme {{ $item->id }} </option> 
                         @endforeach
                     </select>
                 </div>
@@ -41,3 +46,4 @@
     </div>
 </div>
 
+@endsection('content')
