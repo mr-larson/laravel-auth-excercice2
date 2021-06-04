@@ -19,6 +19,14 @@
                     <label class="text-gray-700 text-base">h2</label>
                     <input type="text" class="px-3 py-1 w-full rounded-md" value="{{ $hero->h2 }}" name="h2">
                 </div>
+                <div class="m-3 col-span-2">
+                    <label class="text-gray-700 text-base">Image de fond</label>
+                    {{-- <input type="text" class="px-3 py-1 w-full rounded-md" value="{{ $hero->h2 }}" name="h2"> --}}
+                    <input name="image" class="border border-gray-300 p-3 w-full rounded-sm" type="file" id="pictureSelector">
+                    <img src="{{ asset("img/" . $hero->image) }}" alt="" id="preview_link">
+                </div>
+
+                
                 <div class="flex justify-end mt-10 col-span-2">
                     <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded">Submit</button>
                 </div>

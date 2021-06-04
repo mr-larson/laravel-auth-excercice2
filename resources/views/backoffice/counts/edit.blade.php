@@ -12,13 +12,9 @@
             @method('put')
             <div class="px-6 py-4"> 
                 <div class="m-3 col-span-2">
-                    <label class="text-gray-700 text-base">Figure</label>
-                    <select class="custom-select px-3 py-1 w-full rounded-md" name="figure">
-                        <option selected>choisis une figure</option>
-                        @foreach ($chiffres as $chiffre)
-                            <option {{ $chiffre->figure->id == $figure->id ? "selected" : null }} value="{{ $chiffre->id }}">{{ $chiffre->figure }}</option> 
-                        @endforeach
-                    </select>
+                    <label class="text-gray-700 text-base">Chiffre</label>
+                    <input type="text" class="px-3 py-1 w-full rounded-md" value="{{ $chiffre->figure }}" name="figure">
+
                 </div>
                 <div class="m-3 col-span-2">
                     <label class="text-gray-700 text-base">text</label>

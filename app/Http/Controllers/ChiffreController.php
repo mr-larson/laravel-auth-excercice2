@@ -53,7 +53,7 @@ class ChiffreController extends Controller
      */
     public function show(Chiffre $chiffre)
     {
-        return view("backoffice.chiffre.show", compact("chiffre"));
+        return view("backoffice.counts.show", compact("chiffre"));
     }
 
     /**
@@ -64,7 +64,7 @@ class ChiffreController extends Controller
      */
     public function edit(Chiffre $chiffre)
     {
-        return view("backoffice.chiffre.edit", compact("chiffre"));
+        return view("backoffice.counts.edit", compact("chiffre"));
 
     }
 

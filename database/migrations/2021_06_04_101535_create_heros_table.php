@@ -17,6 +17,7 @@ class CreateHerosTable extends Migration
             $table->id();
             $table->string("h1");
             $table->string("h2");
+            $table->string("image");
             $table->timestamps();
         });
     }

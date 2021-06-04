@@ -3802,6 +3802,13 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
+var selector = document.querySelector('#pictureSelector');
+var preview = document.querySelector('#preview_link');
+selector.addEventListener('change', function (e) {
+  preview.src = URL.createObjectURL(selector.files[0]);
+});
+alert('lool');
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

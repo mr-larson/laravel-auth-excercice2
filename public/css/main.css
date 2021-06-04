@@ -18,9 +18,32 @@
   font-weight: 500;
   padding: 10px 40px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 0.25rem !important;
+}
+.backoffice_btn i {
+  padding-right: 10px;
 }
 
 i {
   font-family: "boxicons";
   font-size: 20px;
+}
+
+.backoffice_delete_btn {
+  background: #da4545;
+}
+
+.admin_btns {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
 }

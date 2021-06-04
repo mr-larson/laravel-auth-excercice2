@@ -17,6 +17,7 @@ class HeroSeeder extends Seeder
         DB::table("heros")->insert([
             "h1"=>"Bettter Digital Experience With Techie",
             "h2"=>"We are team of talented designers making websites with Bootstrap",
+            "image"=>"hero-img.png",
         ]);
     }
 }

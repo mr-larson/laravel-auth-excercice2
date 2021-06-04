@@ -13,23 +13,23 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                       Mon {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
 
-                <!-- register Links -->
+                {{-- <!-- register Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('register')" :active="request()->routeIs('register')">
                         {{ __('register') }}
                     </x-nav-link>
-                </div>
+                </div> --}}
 
-                <!-- login Links -->
+                {{-- <!-- login Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('login')" :active="request()->routeIs('login')">
                         {{ __('login') }}
                     </x-nav-link>
-                </div>
+                </div> --}}
             </div>
 
             <!-- Settings Dropdown -->

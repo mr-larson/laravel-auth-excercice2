@@ -5,8 +5,6 @@
 }
 
 
-
-
 .backoffice_title{
     background-color: url('') ;
     background: linear-gradient(45deg, rgba(58, 250, 215, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url('../../public/img/hero-bg.jpg'); 
@@ -22,9 +20,34 @@
     font-weight: 500;
     padding: 10px 40px;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: .25rem!important;
+
+    i{
+        padding-right: 10px;
+    }
 }
 
 i{
     font-family: "boxicons";
     font-size: 20px;
+}
+
+.backoffice_edit_btn{
+
+
+}
+
+.backoffice_delete_btn{
+    background: rgb(218, 69, 69);
+}
+
+.admin_btns{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
 }

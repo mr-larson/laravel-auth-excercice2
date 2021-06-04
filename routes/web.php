@@ -25,12 +25,12 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    $heros = Hero::all();
+    $hero = Hero::first();
     $abouts = About::all();
     $chiffres = Chiffre::all();
     $temoignages = Temoignage::all();
     $services = Service::all();
-    return view('home', compact('chiffres', 'temoignages', 'services',"abouts", "heros"));
+    return view('home', compact('chiffres', 'temoignages', 'services',"abouts", "hero"));
 });
 
 Route::get('/dashboard', function () {
