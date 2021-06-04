@@ -44,7 +44,8 @@ class TemoignageController extends Controller
         $temoignage->position = $request->position;
         $temoignage->photo = $request->file('photo')->hashName();
         $request->file('photo')->storePublicly("img/testimonials","public");
-
+        $temoignage->save();
+        
         return redirect()->route("temoignage.index")->with("successMessage", "Le temoignage de $temoignage->author à bien été ajouté");
 
 
@@ -86,10 +87,11 @@ class TemoignageController extends Controller
         $temoignage->author = $request->author;
         $temoignage->position = $request->position;
 
-        if($request->file('logo')!= null){
+        if($request->file('photo')!= null){
             $temoignage->photo = $request->file('photo')->hashName();
             $request->file('photo')->storePublicly("img/testimonials","public");
         }
+        $temoignage->save();
         return redirect()->route("temoignage.index")->with("successMessage", "Le temoignage de $temoignage->author à bien été modifié");
 
     }

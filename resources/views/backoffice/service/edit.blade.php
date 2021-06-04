@@ -5,6 +5,8 @@
 
 <!--Section Service-->
 <i class='bx bxs-user-account'></i>
+
+
 <div class="py-12">
     <h2 class="bg-blue-200 text-center p-2 mx-10 text-4xl font-bold rounded-lg shadow-lg mb-10">Section Service</h2>
     
