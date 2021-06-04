@@ -67,7 +67,9 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
-        return view("backoffice.service.edit", compact("service"));
+        
+        $services = Service::all();
+        return view("backoffice.service.edit", compact("service", "services"));
     }
 
     /**
