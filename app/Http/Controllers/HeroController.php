@@ -25,7 +25,7 @@ class HeroController extends Controller
      */
     public function create()
     {
-        return view("backoffice.heros.create");
+        return view("backoffice.hero.create");
     }
 
     /**
@@ -79,7 +79,7 @@ class HeroController extends Controller
         $hero->h2 = $request->h2;
         $hero->save();
 
-        return redirect()->route("about.index")->with("successMessage", "Votre chiffre à bien été ajouté");
+        return redirect()->route("hero.index")->with("successMessage", "Votre chiffre à bien été ajouté");
     }
 
     /**
