@@ -9,7 +9,7 @@
         <!--Edit Card-->
         <form method="POST" class="grid grid-cols-2 bg-blue-200 rounded shadow-lg mx-auto p-3 w-2/5 mb-4" action="/temoignage/{{$temoignage->id}}" enctype="multipart/form-data">
             @csrf
-            @method('put')
+            @method('PUT')
             <div class="px-6 py-4">
                 <div class="m-3 col-span-1">
                     <label  class="text-gray-700 text-base">Photo</label> 

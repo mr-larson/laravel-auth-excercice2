@@ -7,9 +7,9 @@
     <div class="py-12">
         <h2 class="bg-blue-200 text-center p-2 mx-10 text-4xl font-bold rounded-lg shadow-lg">Section temoignage</h2>
         <!--Edit Card-->
-        <form method="POST" class="grid grid-cols-2 bg-blue-200 rounded shadow-lg mx-auto p-3 w-2/5 mb-4" action="/temoignage/{{$temoignage->id}}" enctype="multipart/form-data">
+        <form method="POST" class="grid grid-cols-2 bg-blue-200 rounded shadow-lg mx-auto p-3 w-2/5 mb-4" action="/temoignage" enctype="multipart/form-data">
             @csrf
-            @method('put')
+            @method('post')
             <div class="px-6 py-4">
                 <div class="m-3 col-span-1">
                     <label  class="text-gray-700 text-base">Photo</label> 
