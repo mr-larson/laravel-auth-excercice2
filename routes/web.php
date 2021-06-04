@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ChiffreController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TemoignageController;
@@ -37,14 +38,15 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
+//About
+Route::resource("/about", AboutController::class);
 
 //Chiffre
 Route::resource("/chiffre", ChiffreController::class);
 
-//Chiffre
+//Service
 Route::resource("/service", ServiceController::class);
 
 //Temoignage
 Route::resource("/temoignage", TemoignageController::class);
-
 
