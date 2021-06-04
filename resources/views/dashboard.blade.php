@@ -1,6 +1,10 @@
 @extends('layouts.appFront')
 @section('content')
     @include('layouts.navigation')
+    <p class="lol">
+
+        
+    </p>
     <div class="p-10 grid md:grid-cols-1">
         <div class="rounded overflow-hidden shadow-lg py-12 flex flex-col justify-center align-center items-center "
             style="background: linear-gradient(
@@ -10,7 +14,7 @@
         </div>
     </div>
         <!--Section Counts-->
-        <div class="py-12">
+        <div class="">
             <div class="p-10 grid sm:grid-cols-1 md:grid-cols-3  gap-5 apparition">
                 <a href="{{ route('service.index') }}" class="block ">
                     <div class="rounded overflow-hidden shadow-lg py-20 flex flex-col justify-center align-center items-center"

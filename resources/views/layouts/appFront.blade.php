@@ -29,6 +29,7 @@
   <link href="css/style.css" rel="stylesheet">
   <!-- Styles -->
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
   <!-- =======================================================
   * Template Name: Techie - v4.1.0

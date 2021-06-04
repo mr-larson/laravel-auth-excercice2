@@ -40,6 +40,7 @@ class ServiceController extends Controller
         $service->title = $request->title;
         $service->text = $request->text;
         $service->icon = $request->icon;
+        $service->color = $request->color;
         $service->shape = $request->shape;
 
         $service->save();
