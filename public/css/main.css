@@ -1,3 +1,8 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@font-face {
+  font-family: "boxicons";
+  src: url(/fonts/boxicons.woff?0f4528cf3c75a4b361c0df7cc5007906);
+}
 .backoffice_title {
   background-color: url("");
   background: linear-gradient(45deg, rgba(58, 250, 215, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url(/images/hero-bg.jpg?6d3cdc58e9152fbef11f10605fae7418);
@@ -6,4 +11,16 @@
 
 .backoffice_btn {
   background-color: #533EEE;
+  color: rgba(255, 255, 255, 0.851);
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+
+i {
+  font-family: "boxicons";
+  font-size: 20px;
 }
