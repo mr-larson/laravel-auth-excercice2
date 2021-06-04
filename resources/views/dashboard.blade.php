@@ -1,6 +1,10 @@
 @extends('layouts.appFront')
 @section('content')
     @include('layouts.navigation')
+    <p class="lol">
+
+        
+    </p>
     <div class="p-10 grid md:grid-cols-1">
         <div class="rounded overflow-hidden shadow-lg py-12 flex flex-col justify-center align-center items-center "
             style="background: linear-gradient(
