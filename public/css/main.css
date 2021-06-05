@@ -47,3 +47,31 @@ i {
   justify-content: center;
   padding: 40px 0;
 }
+
+.apparition {
+  -webkit-animation: apparition 3s 0s ease-in;
+          animation: apparition 3s 0s ease-in;
+}
+
+.apparition1 {
+  -webkit-animation: apparition 1.3s 0s ease-in;
+          animation: apparition 1.3s 0s ease-in;
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

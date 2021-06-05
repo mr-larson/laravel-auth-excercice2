@@ -4,8 +4,8 @@
     @include('layouts.navigation')
     <!--Section Temoignage-->
     <div class="py-12">
-        <h2 class="backoffice_title text-center text-white py-3 mx-10 text-xl font-light rounded-lg shadow-lg">Témoignages</h2>
-        <div class="backoffice_btn rounded shadow">
+        <h2 class="backoffice_title text-center text-white py-3 mx-10 text-xl font-light rounded-lg shadow-lg apparition1">Témoignages</h2>
+        <div class="backoffice_btn rounded shadow apprition1">
             <i class='bx bx-plus'></i>
             <a class="" href="/temoignage/create">Nouveau témoignage</a>
         </div>
@@ -13,7 +13,7 @@
 
             <!--Card-->
             @foreach ($temoignages as $temoignage)
-                <div class="rounded overflow-hidden shadow-lg">
+                <div class="rounded overflow-hidden shadow-lg apparition">
                     <div class="px-6 py-4">
                         <img class="w-full" src="{{asset('img/testimonials/' . $temoignage->photo) }}" alt="img">
                         <div class="font-bold text-xl mb-2"> {{ $temoignage->author }}</div>
