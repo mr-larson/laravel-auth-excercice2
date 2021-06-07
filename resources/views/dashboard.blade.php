@@ -1,17 +1,21 @@
 @extends('layouts.appFront')
 @section('content')
     @include('layouts.navigation')
-    <p class="lol">
-
-        
-    </p>
+    
     <div class="p-10 grid md:grid-cols-1">
         <div class="rounded overflow-hidden shadow-lg py-12 flex flex-col justify-center align-center items-center text-white apparition1"
-            style="background: linear-gradient(
+        style="background: linear-gradient(
                     45deg, rgba(58, 250, 215, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url('{{ asset('img/hero-bg.jpg') }}'); background-size: cover;">
             <h2 class="text-center p-2 text-4xl text-white font-regular">Bienvenue dans l'interface admin</h2>
             <p class="text-center p-2 text-lg text-white opacity-80 font-light">Ici vous aurez accès à la gestions de vos donnés. <br>⚠️⚠️ <u>Attention chaque click entraine des conséquences ⚠️⚠️ </u> </p>
+            
             <p class="pt-3  opacity-80">🍬   Pour tout autre renseignement contacter la Team Carambar  🍬</p>
+            
+            @if (session("message"))
+                <p class="alert text-red-400 text-6xl">
+                    {{ session("message") }}
+                </p>
+            @endif
         </div>
     </div>
         <!--Section Counts-->
@@ -62,16 +66,6 @@
                         <p class="text-white opacity-50 font-light py-3">Gérer les chiffres</p>
                     </div>
                 </a>
-            </div>
-        </div>
-
-        <div class="px-10 grid md:grid-cols-1">
-            <div class="rounded overflow-hidden shadow-lg py-12 flex flex-col justify-center align-center items-center text-white"
-                style="background: linear-gradient(
-                        45deg, rgba(58, 250, 215, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url('{{ asset('img/hero-bg.jpg') }}'); background-size: cover;">
-                <h2 class="text-center p-2 text-4xl text-white font-regular">Bienvenue dans l'interface admin</h2>
-                <p class="text-center p-2 text-lg text-white opacity-80 font-light">Ici vous aurez accès à la gestions de vos donnés. <br>⚠️⚠️ <u>Attention chaque click entraine des conséquences ⚠️⚠️ </u> </p>
-                <p class="pt-3  opacity-80">🍬   Pour tout autre renseignement contacter la Team Carambar  🍬</p>
             </div>
         </div>
 @endsection

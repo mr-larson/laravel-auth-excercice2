@@ -46,17 +46,17 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 //Hero
-Route::resource("/hero", HeroController::class);
+Route::resource("/hero", HeroController::class)->middleware(['auth', 'isAdmin']);
 
 //About
-Route::resource("/about", AboutController::class);
+Route::resource("/about", AboutController::class)->middleware(['auth', 'isAdmin']);
 
 //Chiffre
-Route::resource("/chiffre", ChiffreController::class);
+Route::resource("/chiffre", ChiffreController::class)->middleware(['auth', 'isAdmin']);
 
 //Service
-Route::resource("/service", ServiceController::class);
+Route::resource("/service", ServiceController::class)->middleware(['auth', 'isAdmin']);
 
 //Temoignage
-Route::resource("/temoignage", TemoignageController::class);
+Route::resource("/temoignage", TemoignageController::class)->middleware(['auth', 'isAdmin']);
 
