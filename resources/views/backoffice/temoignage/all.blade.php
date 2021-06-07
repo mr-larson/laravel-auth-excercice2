@@ -7,7 +7,7 @@
         <h2 class="backoffice_title text-center text-white py-3 mx-10 text-xl font-light rounded-lg shadow-lg apparition1">Témoignages</h2>
         <div class="backoffice_btn rounded shadow apprition1">
             <i class='bx bx-plus'></i>
-            <a class="" href="/temoignage/create">Nouveau témoignage</a>
+            <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow hover:bg-purple-800" href="/temoignage/create">Nouveau témoignage</a>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl mx-auto">
 
@@ -24,11 +24,11 @@
                         <p class="text-gray-700 text-base">
                             {{ $temoignage->position }}
                         </p>
-                        <a href="{{route('temoignage.edit',$temoignage->id) }}" class="backoffice_btn text-center mb-2 mx-4 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                        <a href="{{route('temoignage.edit',$temoignage->id) }}" class="text-center border-2 bg-blue-500 hover:bg-blue-800 text-white hover:border-blue-500 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500>Edit</a>
                         <form action="{{ route('temoignage.destroy',$temoignage->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button class="text-center border-2 border-red-300 text-red-300 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-red-500 hover:text-red-500">Delete</button>
+                            <button class="text-center border-2 bg-pink-500 hover:bg-pink-800 text-white hover:border-pink-500 px-1 rounded-lg m-2 w-auto text-center mb-2 hover:border-pink-500 hover:text-pink-500">Delete</button>
                         </form>
                 </div>
             @endforeach

@@ -21,7 +21,7 @@
                             {{ $hero->h2 }}
                         </p>
                         <div class="admin_btns">
-                            <a href="{{route('hero.edit',$hero->id) }}" class="backoffice_btn bg-white text-center mb-2 mx-4 hover:border-blue-500 hover:text-blue-500" style="color: #6741EF">Éditer</a>
+                            <a href="{{route('hero.edit',$hero->id) }}" class="text-center border-2 bg-blue-500 hover:bg-blue-800 text-white hover:border-blue-500 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500" style="color: #6741EF">Éditer</a>
                             {{-- <form action="{{ route('hero.destroy',$hero->id) }}" method="POST" >
                                 @csrf
                                 @method('DELETE')
