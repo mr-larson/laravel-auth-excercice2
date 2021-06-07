@@ -47,3 +47,11 @@ i {
   justify-content: center;
   padding: 40px 0;
 }
+
+.picture_overview {
+  padding: 60px 0;
+}
+.picture_overview img {
+  max-height: 200px;
+  margin: 0 auto;
+}

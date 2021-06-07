@@ -13,8 +13,7 @@
 
             <!--Card-->
             @foreach ($temoignages as $temoignage)
-                <div class="rounded overflow-hidden shadow-lg">
-                    <div class="px-6 py-4">
+                <div class="rounded overflow-hidden shadow-lg px-6 py-4">
                         <img class="w-full" src="{{asset('img/testimonials/' . $temoignage->photo) }}" alt="img">
                         <div class="font-bold text-xl mb-2"> {{ $temoignage->author }}</div>
                         <p class="text-gray-700 text-base">
@@ -30,7 +29,6 @@
                             @method('DELETE')
                             <button class="text-center border-2 border-red-300 text-red-300 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-red-500 hover:text-red-500">Delete</button>
                         </form>
-                    </div> 
                 </div>
             @endforeach
 

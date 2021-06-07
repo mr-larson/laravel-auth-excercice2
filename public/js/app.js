@@ -3807,7 +3807,6 @@ var preview = document.querySelector('#preview_link');
 selector.addEventListener('change', function (e) {
   preview.src = URL.createObjectURL(selector.files[0]);
 });
-alert('lool');
 
 /***/ }),
 
