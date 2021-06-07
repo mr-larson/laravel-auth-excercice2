@@ -10,4 +10,3 @@ selector.addEventListener('change', e => {
     preview.src = URL.createObjectURL(selector.files[0])
 });
 
-alert('lool');

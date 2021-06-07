@@ -9,26 +9,26 @@
         <!--Edit Card-->
         <form method="POST" class="backoffice_title grid grid-cols-1 bg-blue-200 rounded shadow-lg mx-auto p-3 w-3/5 mb-4 apparition" action="/hero/" enctype="multipart/form-data">
             @csrf
-            @method('post')
-            <div class="px-6 py-4">
-                <div class="m-3 col-span-2">
-                    <label class="text-gray-700 text-base">h1</label>
+            @method('put')
+                <div class="my-4 col-span-2">
+                    <label class="text-gray-500 text-base">Grand titre</label>
                     <input type="text" class="px-3 py-1 w-full rounded-md" value="{{ $hero->h1 }}" name="h1">
                 </div>
-                <div class="m-3 col-span-2">
-                    <label class="text-gray-700 text-base">h2</label>
+                <div class="my-4  col-span-2">
+                    <label class="text-gray-500 text-base">Texte d'accompagnement</label>
                     <input type="text" class="px-3 py-1 w-full rounded-md" value="{{ $hero->h2 }}" name="h2">
                 </div>
-                <div class="m-3 col-span-2">
-                    <label class="text-gray-700 text-base">Image de fond</label>
+                <div class="my-4  col-span-2" >
+                    <label class="text-gray-500 text-base">Image de la couverture</label>
                     {{-- <input type="text" class="px-3 py-1 w-full rounded-md" value="{{ $hero->h2 }}" name="h2"> --}}
+                    <div class="picture_overview" style="background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url('{{ asset('img/hero-bg.jpg') }}'); background-size: cover;">
+                        <img src="{{ asset("img/" . $hero->image) }}" alt="" id="preview_link">
+                    </div>
                     <input name="image" class="border border-gray-300 p-3 w-full rounded-sm" type="file" id="pictureSelector">
-                    <img src="{{ asset("img/" . $hero->image) }}" alt="" id="preview_link">
                 </div>
                 <div class="flex justify-end mt-10 col-span-2">
                     <button type="submit" class="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded">Submit</button>
                 </div>
-            </div>     
         </form>
     </div>
 @endsection

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Hero;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Symfony\Component\Console\Input\Input;
 
 class HeroController extends Controller
 {
@@ -77,6 +79,17 @@ class HeroController extends Controller
     {
         $hero->h1 = $request->h1;
         $hero->h2 = $request->h2;
+
+        if($request->file('image')!= null){
+            // $filename = $request->file('image')->getClientOriginalName();
+            Storage::disk('public')->delete("img/" . $hero->image);
+
+            $filename = "hero-img" . '.' . $request->file('image')->getClientOriginalExtension();
+            $hero->image = $filename;
+
+            $request->file('image')->storePubliclyAs('img/', $filename , 'public');
+        }
+
         $hero->save();
 
         return redirect()->route("hero.index")->with("successMessage", "Votre chiffre à bien été ajouté");

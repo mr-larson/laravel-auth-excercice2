@@ -30,7 +30,6 @@
                             @method('DELETE')
                             <button class="text-center border-2 border-red-300 text-red-300 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-red-500 hover:text-red-500">Delete</button>
                         </form>
-                    </div> 
                 </div>
             @endforeach
 
