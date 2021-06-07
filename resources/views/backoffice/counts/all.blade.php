@@ -7,7 +7,7 @@
     <div class="py-12">
         <h2 class="backoffice_title text-center text-white py-3 mx-10 text-4xl font-light rounded-lg shadow-lg apparition1">Section Counts</h2>
         <div class="max-w-6xl mx-auto  flex justify-center my-10 apparition1">
-            <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow hover:bg-purple-800" href="/counts/create">+ Create</a>
+            <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow hover:bg-purple-800" href="/chiffre/create">+ Create</a>
         </div>
         <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5">
 

@@ -7,7 +7,7 @@
     <div class="py-12">
         <h2 class="backoffice_title text-center text-white py-3 mx-10 text-4xl font-light rounded-lg shadow-lg apparition1">Section Counts</h2>
         <!--Edit Card-->
-        <form method="POST" class="backoffice_title grid grid-cols-1 bg-blue-200 rounded shadow-lg mx-auto p-3 w-3/5 mb-4 apparition" action="/chiffre/{{$chiffre->id}}" enctype="multipart/form-data">
+        <form method="POST" class="backoffice_title grid grid-cols-1 bg-blue-200 rounded shadow-lg mx-auto p-3 w-3/5 m-10 apparition" action="/chiffre/{{$chiffre->id}}" enctype="multipart/form-data">
             @csrf
             @method('put')
             <div class="px-6 py-4"> 
