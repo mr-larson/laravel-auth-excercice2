@@ -5,12 +5,11 @@
     <!--Section Temoignage-->
     <div class="py-12">
         <h2 class="backoffice_title text-center text-white py-3 mx-10 text-xl font-light rounded-lg shadow-lg apparition1">Témoignages</h2>
-        <div class="backoffice_btn rounded shadow apprition1">
+        <div class="backoffice_btn rounded shadow apprition1 mx-auto my-10">
             <i class='bx bx-plus'></i>
             <a class="" href="/temoignage/create">Nouveau témoignage</a>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl mx-auto">
-
             <!--Card-->
             @foreach ($temoignages as $temoignage)
                 <div class="rounded overflow-hidden shadow-lg apparition">
