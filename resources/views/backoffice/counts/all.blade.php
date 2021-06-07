@@ -7,7 +7,7 @@
     <div class="py-12">
         <h2 class="backoffice_title text-center text-white py-3 mx-10 text-4xl font-light rounded-lg shadow-lg apparition1">Section Counts</h2>
         <div class="max-w-6xl mx-auto  flex justify-center my-10 apparition1">
-            <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow" href="/counts/create">Create</a>
+            <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow hover:bg-purple-800" href="/counts/create">+ Create</a>
         </div>
         <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5">
 
@@ -23,7 +23,7 @@
                         <form action="{{ route('chiffre.destroy',$chiffre->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button class="text-center border-2 border-red-300 text-red-300 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-red-500 hover:text-red-500">Delete</button>
+                            <button class="text-center border-2 bg-pink-500 hover:bg-pink-800 text-white hover:border-pink-500 px-1 rounded-lg m-2 w-auto text-center mb-2 hover:border-pink-500 hover:text-pink-500">Delete</button>
                         </form>
                     </div>
                 </div>

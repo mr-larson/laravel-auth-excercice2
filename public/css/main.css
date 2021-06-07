@@ -65,7 +65,6 @@ i {
   padding: 40px 0;
 }
 
-<<<<<<< HEAD
 .apparition {
   -webkit-animation: apparition 3s 0s ease-in;
           animation: apparition 3s 0s ease-in;
@@ -92,12 +91,11 @@ i {
   100% {
     opacity: 1;
   }
-=======
+}
 .picture_overview {
   padding: 60px 0;
 }
 .picture_overview img {
   max-height: 200px;
   margin: 0 auto;
->>>>>>> 74ad8c9061c29c77f8d1e41bd07e9d2532a65d5c
 }

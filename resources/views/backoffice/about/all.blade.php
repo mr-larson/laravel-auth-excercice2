@@ -30,7 +30,7 @@
                             {{ $about->li3 }}
                         </p>
                         <div class="admin_btns">
-                            <a href="{{route('about.edit',$about->id) }}" class="backoffice_btn text-center mb-2 mx-4 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                            <a href="{{route('about.edit',$about->id) }}" class="text-center border-2 bg-blue-500 hover:bg-blue-800 text-white hover:border-blue-500 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
                             {{-- <form action="{{ route('about.destroy',$about->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
