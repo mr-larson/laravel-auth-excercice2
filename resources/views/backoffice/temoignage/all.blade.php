@@ -5,7 +5,7 @@
     <!--Section Temoignage-->
     <div class="py-12">
         <h2 class="backoffice_title text-center text-white py-3 mx-10 text-xl font-light rounded-lg shadow-lg">Témoignages</h2>
-        <div class="backoffice_btn rounded shadow">
+        <div class="backoffice_btn rounded shadow mx-auto my-10">
             <i class='bx bx-plus'></i>
             <a class="" href="/temoignage/create">Nouveau témoignage</a>
         </div>

@@ -4,9 +4,10 @@
     @include('layouts.navigation')
     <!--Section About-->
     <div class="py-12">
-        <h2 class="backoffice_title text-center text-white py-3 mx-10 text-4xl font-light rounded-lg shadow-lg">Abouts</h2>
-        <div class="max-w-6xl mx-auto  flex justify-center my-10">
-            <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow" href="/about/create">Nouveau about</a>
+        <h2 class="backoffice_title text-center text-white py-3 mx-10 text-xl font-light rounded-lg shadow-lg">Abouts</h2>
+        <div class="backoffice_btn rounded shadow mx-auto my-10">
+            <i class='bx bx-plus'></i>
+            <a class="" href="/temoignage/create">Nouveau about</a>
         </div>
         <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
 

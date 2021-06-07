@@ -5,9 +5,12 @@
 
     <!--Section Service-->
     <div class="py-12">
-        <h2 class="bg-blue-200 text-center p-2 mx-10 text-4xl font-bold rounded-lg shadow-lg">Section Service</h2>
-        <div class="max-w-6xl mx-auto  flex justify-center my-10">
-            <a class="bg-blue-300 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded shadow" href="/service/create">Create</a>
+        <h2 class="backoffice_title text-center text-white py-3 mx-10 text-xl font-light rounded-lg shadow-lg">Services</h2>
+
+     
+        <div class="backoffice_btn rounded shadow mx-auto my-10">
+            <i class='bx bx-plus'></i>
+            <a class="" href="/service/create">Nouveau service</a>
         </div>
         <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
 

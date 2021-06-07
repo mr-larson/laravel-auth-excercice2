@@ -4,9 +4,9 @@
     @include('layouts.navigation')
     <!--Section Hero-->
     <div class="py-12">
-        <h2 class="backoffice_title text-center text-white py-3 mx-10 text-4xl font-light rounded-lg shadow-lg">Hero Banner</h2>
-  
-        <div class="grid grid-cols-1 gap-5 max-w-6xl mx-auto py-20">
+        {{-- <h2 class="backoffice_title text-center text-white py-3 mx-10 text-xl font-light rounded-lg shadow-lg">Hero Banner</h2> --}}
+
+        <div class="grid grid-cols-1 gap-5  mx-auto">
 
             <!--Card-->
             @foreach ($heros as $hero)
@@ -30,7 +30,7 @@
 
 
                         <div class="admin_btns">
-                            <a href="{{route('hero.edit',$hero->id) }}" class="backoffice_btn text-center mb-2 mx-4 hover:border-blue-500 hover:text-blue-500">Éditer</a>
+                            <a href="{{route('hero.edit',$hero->id) }}" class="backoffice_btn bg-white text-center mb-2 mx-4 hover:border-blue-500 hover:text-blue-500" style="color: #6741EF">Éditer</a>
                             {{-- <form action="{{ route('hero.destroy',$hero->id) }}" method="POST" >
                                 @csrf
                                 @method('DELETE')
