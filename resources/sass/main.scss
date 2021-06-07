@@ -43,7 +43,20 @@ i{
 }
 
 .backoffice_delete_btn{
-    background: rgb(218, 69, 69);
+    background: rgb(218, 69, 168);
+    color: rgba(255, 255, 255, 0.851);
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: .25rem!important;
 }
 
 .admin_btns{

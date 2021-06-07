@@ -5,7 +5,7 @@
 
     <!--Section Service-->
     <div class="py-12">
-        <h2 class="bg-blue-200 text-center p-2 mx-10 text-4xl font-bold rounded-lg shadow-lg apparition1">Section Service</h2>
+        <h2 class="backoffice_title text-center text-white py-3 mx-10 text-4xl font-light rounded-lg shadow-lg apparition1">Section Service</h2>
         <div class="max-w-6xl mx-auto  flex justify-center my-10 apparition1">
             <a class="bg-blue-300 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded shadow" href="/service/create">Create</a>
         </div>
@@ -30,7 +30,7 @@
                             <h4><a href="">{{ $service->title }}</a></h4>
                             <p>{{ $service->text }}</p>
                         </div>
-                        <a href="{{route('service.edit',$service->id) }}" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                        <a href="{{route('service.edit',$service->id) }}" class="backoffice_btn text-center mb-2 mx-4 hover:border-blue-500 hover:text-blue-500">Edit</a>
                         <form action="{{ route('service.destroy',$service->id) }}" method="POST">
                             @csrf
                             @method('DELETE')

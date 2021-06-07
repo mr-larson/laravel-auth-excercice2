@@ -39,7 +39,24 @@ i {
 }
 
 .backoffice_delete_btn {
-  background: #da4545;
+  background: #da45a8;
+  color: rgba(255, 255, 255, 0.851);
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 0.25rem !important;
 }
 
 .admin_btns {

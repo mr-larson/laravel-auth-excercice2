@@ -24,7 +24,7 @@
                         <p class="text-gray-700 text-base">
                             {{ $temoignage->position }}
                         </p>
-                        <a href="{{route('temoignage.edit',$temoignage->id) }}" class="text-center border-2 border-blue-300 text-blue-300 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                        <a href="{{route('temoignage.edit',$temoignage->id) }}" class="backoffice_btn text-center mb-2 mx-4 hover:border-blue-500 hover:text-blue-500">Edit</a>
                         <form action="{{ route('temoignage.destroy',$temoignage->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
