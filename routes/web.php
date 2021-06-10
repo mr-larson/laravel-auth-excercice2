@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ChiffreController;
 use App\Http\Controllers\HeroController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TemoignageController;
 use App\Models\Chiffre;
@@ -65,3 +66,5 @@ Route::resource("/service", ServiceController::class)->middleware(['auth']);
 // Route::resource("/temoignage", TemoignageController::class)->middleware(['auth', 'isAdmin']);
 Route::resource("/temoignage", TemoignageController::class)->middleware(['auth']);
 
+//Route pour l'email (Contact.blade.php)
+Route::post("/send-mail", [MailController::class, "sendMail"]);
