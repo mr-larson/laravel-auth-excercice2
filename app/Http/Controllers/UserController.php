@@ -27,6 +27,7 @@ class UserController extends Controller
      */
     public function create()
     {
+        $this->authorize("user-create", User::class);
         $roles = Role::all();
         return view("backoffice.user.create", compact("roles"));
     }
@@ -79,6 +80,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
+        $this->authorize("user-edit", $user);
         $roles = Role::all();
         return view("backoffice.user.edit", compact("user", "roles"));
     }

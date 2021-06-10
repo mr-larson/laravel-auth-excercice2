@@ -27,7 +27,7 @@ class HeroController extends Controller
      */
     public function create()
     { 
-        $this->authorize("create", Hero::class);
+        $this->authorize("hero-create", Hero::class);
         // C'est obligatoire de retourner la classe pour le create 
         // (comme on a pas l'instance précise de la classe)
         return view("backoffice.hero.create");
@@ -70,7 +70,7 @@ class HeroController extends Controller
      */
     public function edit(Hero $hero)
     {   
-        $this->authorize("update", $hero);
+        $this->authorize("hero-edit", $hero);
         return view("backoffice.hero.edit", compact("hero"));
     }
 

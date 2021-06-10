@@ -25,6 +25,7 @@ class AboutController extends Controller
      */
     public function create()
     {
+        $this->authorize("about-create", About::class);
         return view("backoffice.abouts.create");
     }
 
@@ -57,6 +58,7 @@ class AboutController extends Controller
      */
     public function show(About $about)
     {
+        $this->authorize("about-show", $about);
         return view("backoffice.about.show", compact("about"));
     }
 
@@ -69,8 +71,7 @@ class AboutController extends Controller
     public function edit(About $about)
     
     {
-        // $this->authorize("update", $about);
-
+        $this->authorize("about-edit", $about);
         return view("backoffice.about.edit", compact("about"));
     }
 

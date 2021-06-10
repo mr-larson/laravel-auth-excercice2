@@ -25,6 +25,7 @@ class ChiffreController extends Controller
      */
     public function create()
     {
+        $this->authorize("chiffre-create", Chiffre::class);
         return view("backoffice.counts.create");
     }
 
@@ -65,6 +66,7 @@ class ChiffreController extends Controller
      */
     public function edit(Chiffre $chiffre)
     {
+        $this->authorize("chiffre-edit", $chiffre);
         return view("backoffice.counts.edit", compact("chiffre"));
 
     }
