@@ -26,7 +26,10 @@ class HeroController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
+    { 
+        $this->authorize("create", Hero::class);
+        // C'est obligatoire de retourner la classe pour le create 
+        // (comme on a pas l'instance précise de la classe)
         return view("backoffice.hero.create");
     }
 
@@ -38,6 +41,7 @@ class HeroController extends Controller
      */
     public function store(Request $request)
     {
+        $this->authorize("update", Hero::class);
         $hero = new Hero();
         $hero->h1 = $request->h1;
         $hero->h2 = $request->h2;
@@ -54,6 +58,7 @@ class HeroController extends Controller
      */
     public function show(Hero $hero)
     {
+        $this->authorize("view", $hero);
         return view("backoffice.hero.show", compact("hero"));
     }
 
@@ -64,7 +69,8 @@ class HeroController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit(Hero $hero)
-    {
+    {   
+        $this->authorize("update", $hero);
         return view("backoffice.hero.edit", compact("hero"));
     }
 
@@ -77,6 +83,7 @@ class HeroController extends Controller
      */
     public function update(Request $request, Hero $hero)
     {
+        $this->authorize("update", $hero);
         $hero->h1 = $request->h1;
         $hero->h2 = $request->h2;
 
@@ -102,7 +109,9 @@ class HeroController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy(Hero $hero)
+
     {
+        $this->authorize("delete", $hero);
         $hero->delete();
         return redirect()->back()->with("successMessage", "Votre chiffre à bien été suprimmé");
     }

@@ -46,17 +46,22 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 //Hero
-Route::resource("/hero", HeroController::class)->middleware(['auth', 'isAdmin']);
+// Route::resource("/hero", HeroController::class)->middleware(['auth', 'isAdmin']);
+Route::resource("/hero", HeroController::class)->middleware(['auth']);
 
 //About
-Route::resource("/about", AboutController::class)->middleware(['auth', 'isAdmin']);
+// Route::resource("/about", AboutController::class)->middleware(['auth', 'isAdmin']);
+Route::resource("/about", AboutController::class)->middleware(['auth']);
 
 //Chiffre
-Route::resource("/chiffre", ChiffreController::class)->middleware(['auth', 'isAdmin']);
+// Route::resource("/chiffre", ChiffreController::class)->middleware(['auth', 'isAdmin']);
+Route::resource("/chiffre", ChiffreController::class)->middleware(['auth']);
 
 //Service
-Route::resource("/service", ServiceController::class)->middleware(['auth', 'isAdmin']);
+// Route::resource("/service", ServiceController::class)->middleware(['auth', 'isAdmin']);
+Route::resource("/service", ServiceController::class)->middleware(['auth']);
 
 //Temoignage
-Route::resource("/temoignage", TemoignageController::class)->middleware(['auth', 'isAdmin']);
+// Route::resource("/temoignage", TemoignageController::class)->middleware(['auth', 'isAdmin']);
+Route::resource("/temoignage", TemoignageController::class)->middleware(['auth']);
 

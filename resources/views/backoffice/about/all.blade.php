@@ -5,9 +5,11 @@
     <!--Section About-->
     <div class="py-12">
         <h2 class="backoffice_title text-center text-white py-3 mx-10 text-4xl font-light rounded-lg shadow-lg apparition1">Abouts</h2>
-        {{-- <div class="max-w-6xl mx-auto  flex justify-center my-10 apparition1">
-            <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow" href="/about/create">Nouveau about</a>
-        </div> --}}
+        @can('create', App\models\About::class)
+            <div class="max-w-6xl mx-auto  flex justify-center my-10 apparition1">
+                <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow" href="/about/create">Nouveau about</a>
+            </div>
+        @endcan
         <div class="grid grid-cols-1 gap-5 max-w-6xl mx-auto py-20">
 
             <!--Card-->
@@ -30,7 +32,9 @@
                             {{ $about->li3 }}
                         </p>
                         <div class="admin_btns">
-                            <a href="{{route('about.edit',$about->id) }}" class="backoffice_btn text-center mb-2 mx-4 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                            @can('update', $about)
+                                    <a href="{{route('about.edit',$about->id) }}" class="backoffice_btn text-center mb-2 mx-4 hover:border-blue-500 hover:text-blue-500">Edit</a>
+                             @endcan
                             {{-- <form action="{{ route('about.destroy',$about->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')

@@ -7,18 +7,13 @@
     <div class="py-12">
         <h2 class="backoffice_title text-center text-white py-3 mx-10 text-4xl font-light rounded-lg shadow-lg apparition1">Section Counts</h2>
         <!--Edit Card-->
-        <form method="POST" class="backoffice_title grid grid-cols-1 bg-blue-200 rounded shadow-lg mx-auto p-3 w-3/5 mb-4 apparition" action="/chiffre/{{$chiffre->id}}" enctype="multipart/form-data">
+        <form method="POST" class="backoffice_title grid grid-cols-1 bg-blue-200 rounded shadow-lg mx-auto p-3 w-3/5 mb-4 apparition" action="/chiffre" enctype="multipart/form-data">
             @csrf
-            @method('put')
+            @method('post')
             <div class="px-6 py-4">
                 <div class="m-3 col-span-2">
                     <label class="text-gray-700 text-base">Figure</label>
-                    <select class="custom-select px-3 py-1 w-full rounded-md" name="figure">
-                        <option selected>choisisse une figure</option>
-                        @foreach ($chiffres as $chiffre)
-                            <option value="{{ $chiffre->id }}">{{ $chiffre->figure }}</option> 
-                        @endforeach
-                    </select>
+                    <input type="number" class="text-gray-700 text-base">
                 </div>
                 <div class="m-3 col-span-2">
                     <label class="text-gray-700 text-base">text</label>

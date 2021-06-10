@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use App\Models\Temoignage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -26,6 +27,8 @@ class TemoignageController extends Controller
      */
     public function create()
     {
+        $this->authorize("create", Temoignage::class);
+
         return view("backoffice.temoignage.create");
     }
 
@@ -37,6 +40,8 @@ class TemoignageController extends Controller
      */
     public function store(Request $request)
     {
+        $this->authorize("create", Service::class);
+
         $temoignage = new Temoignage();
 
         $temoignage->text = $request->text;
@@ -71,6 +76,7 @@ class TemoignageController extends Controller
      */
     public function edit(Temoignage $temoignage)
     {
+
         return view("backoffice.temoignage.edit", compact("temoignage"));
     }
 
@@ -83,6 +89,8 @@ class TemoignageController extends Controller
      */
     public function update(Request $request, Temoignage $temoignage)
     {
+        $this->authorize("update", $temoignage);
+
         $temoignage->text = $request->text;
         $temoignage->author = $request->author;
         $temoignage->position = $request->position;
@@ -104,6 +112,8 @@ class TemoignageController extends Controller
      */
     public function destroy(Temoignage $temoignage)
     {
+        $this->authorize("delete", $temoignage);
+
         Storage::disk('public')->delete("img/testimonials" . $temoignage->photo);
         $temoignage->delete();
 

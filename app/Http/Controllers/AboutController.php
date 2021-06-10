@@ -36,8 +36,11 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
+        $this->authorize("create", About::class);
+
         $about = new About();
         $about->h3 = $request->h3;
+        $about->p = $request->p;
         $about->li1 = $request->li1;
         $about->li2 = $request->li2;
         $about->li3 = $request->li3;
@@ -64,7 +67,10 @@ class AboutController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit(About $about)
+    
     {
+        // $this->authorize("update", $about);
+
         return view("backoffice.about.edit", compact("about"));
     }
 
@@ -77,7 +83,9 @@ class AboutController extends Controller
      */
     public function update(Request $request, About $about)
     {
+        $this->authorize("update", $about);
         $about->h3 = $request->h3;
+        $about->p = $request->p;
         $about->li1 = $request->li1;
         $about->li2 = $request->li2;
         $about->li3 = $request->li3;
@@ -94,6 +102,7 @@ class AboutController extends Controller
      */
     public function destroy(About $about)
     {
+        $this->authorize("delete", $about);
         $about->delete();
         return redirect()->back()->with("successMessage", "Votre chiffre à bien été suprimmé");
     }

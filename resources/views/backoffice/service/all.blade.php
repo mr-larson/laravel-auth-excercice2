@@ -1,8 +1,10 @@
 @extends('layouts.appFront')
 
 @section('content')
-    @include('layouts.navigation')
-    
+@include('layouts.navigation')
+
+
+
     <div id="" class="services"  >
         <div class="max-w-6xl mx-auto  flex justify-center my-10 apparition1">
             <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow hover:bg-purple-800" href="/service/create">+ Create</a>
@@ -12,20 +14,24 @@
                 @foreach ($services as $service)
                         <div class="mycard icon-box {{ $service->color }} shadow-lg">
                             <div class="icon">
-                                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    {!! $service->shape !!}
-                                    </svg>
-                                    <i class="{{ $service->icon }}"></i>
+                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                {!! $service->shape !!}
+                                </svg>
+                                <i class="{{ $service->icon }}"></i>
                             </div>
                             <h4><a href="">{{ $service->title }}</a></h4>
                             <p>{{ $service->text }}</p>
                             <div class="buttons flex justify-center">
-                                <a href="{{route('service.edit',$service->id) }}" class="backoffice_btn px-2 rounded-lg m-2 text-center mb-2">Edit</a>
-                                <form action="{{ route('service.destroy',$service->id) }}" method="POST">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button class="backoffice_delete_btn bg-red-500 text-white px-1 rounded-lg m-2 w-auto text-center">Delete</button>
-                                </form>
+                                @can('update', $service)
+                                    <a href="{{route('service.edit',$service->id) }}" class="backoffice_btn px-2 rounded-lg m-2 text-center mb-2">Edit</a>
+                                @endcan
+                                @can('delete', $service)
+                                    <form action="{{ route('service.destroy',$service->id) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="backoffice_delete_btn bg-red-500 text-white px-1 rounded-lg m-2 w-auto text-center">Delete</button>
+                                    </form>
+                                @endcan
                             </div>
                         </div>
                 @endforeach

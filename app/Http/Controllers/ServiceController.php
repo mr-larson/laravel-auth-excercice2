@@ -25,6 +25,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
+        $this->authorize("create", Service::class);
         return view("backoffice.service.create");
     }
 
@@ -36,6 +37,8 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
+        $this->authorize("create", Service::class);
+
         $service = new Service();
         $service->title = $request->title;
         $service->text = $request->text;
@@ -82,6 +85,8 @@ class ServiceController extends Controller
      */
     public function update(Request $request, Service $service)
     {
+        $this->authorize("update", $service);
+
         $service->title = $request->title;
         $service->text = $request->text;
         $service->icon = $request->icon;
@@ -100,6 +105,7 @@ class ServiceController extends Controller
      */
     public function destroy(Service $service)
     {
+        $this->authorize("delete", $service);
         $service->delete();
         return redirect()->back()->with("successMessage", "Votre service à bien été suprimmé");
     }

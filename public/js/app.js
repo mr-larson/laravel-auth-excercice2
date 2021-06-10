@@ -3803,10 +3803,30 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
 var selector = document.querySelector('#pictureSelector');
+var pathSelector = document.querySelector('#path_selector');
 var preview = document.querySelector('#preview_link');
-selector.addEventListener('change', function (e) {
-  preview.src = URL.createObjectURL(selector.files[0]);
-});
+
+if (selector) {
+  selector.addEventListener('change', function (e) {
+    preview.src = URL.createObjectURL(selector.files[0]);
+  });
+}
+
+if (pathSelector) {
+  pathSelector.addEventListener('change', function (e) {
+    var shape = document.createElement('svg');
+    shape.style.height = "100px";
+    shape.style.width = "100px";
+    shape.style.fill = "blue";
+    shape.setAttribute('viewBox', '0 0 600 600');
+    shape.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    shape.innerHTML = pathSelector.value;
+    console.log(pathSelector.value);
+    console.log(shape);
+    preview.innerHTML = "";
+    preview.appendChild(shape);
+  });
+}
 
 /***/ }),
 

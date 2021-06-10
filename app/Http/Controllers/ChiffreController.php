@@ -36,6 +36,7 @@ class ChiffreController extends Controller
      */
     public function store(Request $request)
     {
+        $this->authorize("create", Chiffre::class);
         $chiffre = new Chiffre();
         $chiffre->figure = $request->figure;
         $chiffre->text = $request->text;
@@ -77,6 +78,7 @@ class ChiffreController extends Controller
      */
     public function update(Request $request, Chiffre $chiffre)
     {
+        $this->authorize("update", $chiffre);
         $chiffre->figure = $request->figure;
         $chiffre->text = $request->text;
 
@@ -92,7 +94,8 @@ class ChiffreController extends Controller
      */
     public function destroy(Chiffre $chiffre)
     {
-       $chiffre->delete();
-       return redirect()->back()->with("successMessage", "Votre chiffre à bien été suprimmé");
+        $this->authorize("update", $chiffre);
+        $chiffre->delete();
+        return redirect()->back()->with("successMessage", "Votre chiffre à bien été suprimmé");
     }
 }

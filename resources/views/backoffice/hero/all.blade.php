@@ -5,9 +5,11 @@
     <!--Section Hero-->
     <div class="py-12">
         {{-- <h2 class="backoffice_title text-center text-white py-3 mx-10 text-4xl font-light rounded-lg shadow-lg apparition1">Héros</h2> --}}
-        {{-- <div class="max-w-6xl mx-auto  flex justify-center my-10">
-            <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow" href="/hero/create">Nouveau héro</a>
-        </div> --}}
+       @can('create', App\models\Hero::class)
+            <div class="max-w-6xl mx-auto  flex justify-center my-10">
+                <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow" href="/hero/create">Nouveau héro</a>
+            </div>
+       @endcan
         <div class="grid grid-cols-1 gap-5 mx-auto apparition1">
             <!--Card-->
             @foreach ($heros as $hero)
@@ -29,11 +31,14 @@
                             <img src="{{ asset("img/" . $hero->image) }}" alt="" id="preview_link">
                         </div>
 
-
+                        {{-- //bien se rappeler qu'il faut utiliser des antislash --}}
                         <div class="admin_btns">
-                            <a href="{{route('hero.edit',$hero->id) }}" class="backoffice_btn bg-white text-center mb-2 mx-4 hover:border-blue-500 hover:text-blue-500" style="color: #6741EF">Éditer</a>
-                
-                        </div>
+                                {{-- // ici c'est pareille que pour les policy, 
+                                // s'il y a une id il faut passer l'id sinon on passe la classe --}}
+                                @can('update', $hero)
+                                    <a href="{{route('hero.edit',$hero->id) }}" class="backoffice_btn bg-white text-center mb-2 mx-4 hover:border-blue-500 hover:text-blue-500" style="color: #6741EF">Éditer</a>
+                                @endcan
+                            </div>
                 </div>
             @endforeach
         </div>
