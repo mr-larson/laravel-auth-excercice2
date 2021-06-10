@@ -26,6 +26,7 @@
                         <p class="text-gray-700 text-base">
                             {{ $temoignage->position }}
                         </p>
+<<<<<<< HEAD
                         @can('update', $temoignage)
                             <a href="{{route('temoignage.edit',$temoignage->id) }}" class="text-center border-2 bg-blue-500 hover:bg-blue-800 text-white hover:border-blue-500 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500">Edit</a>
                         @endcan
@@ -36,6 +37,15 @@
                                 <button class="text-center border-2 bg-pink-500 hover:bg-pink-800 text-white hover:border-pink-500 px-1 rounded-lg m-2 w-auto text-center mb-2 hover:border-pink-500 hover:text-pink-500">Delete</button>
                             </form>
                         @endcan
+=======
+                        <a href="{{route('temoignage.edit',$temoignage->id) }}" class="text-center border-2 bg-blue-500 hover:bg-blue-800 text-white hover:border-blue-500 px-2 rounded-lg m-2 w-auto text-center mb-2 hover:border-blue-500 hover:text-blue-500>Edit</a>
+                        <form action="{{ route('temoignage.destroy',$temoignage->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="text-center border-2 bg-pink-500 hover:bg-pink-800 text-white hover:border-pink-500 px-1 rounded-lg m-2 w-auto text-center mb-2 hover:border-pink-500 hover:text-pink-500">Delete</button>
+                        </form>
+                    </div>
+>>>>>>> 4e7bdfda98f94fa4905fb4b0c52a31f162da59b8
                 </div>
             @endforeach
 

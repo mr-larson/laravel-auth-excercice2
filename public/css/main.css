@@ -66,13 +66,13 @@ i {
 }
 
 .apparition {
-  -webkit-animation: apparition 3s 0s ease-in;
-          animation: apparition 3s 0s ease-in;
+  -webkit-animation: apparition 1.5s 0s ease-in;
+          animation: apparition 1.5s 0s ease-in;
 }
 
 .apparition1 {
-  -webkit-animation: apparition 1.3s 0s ease-in;
-          animation: apparition 1.3s 0s ease-in;
+  -webkit-animation: apparition 1s 0s ease-in;
+          animation: apparition 1s 0s ease-in;
 }
 
 @-webkit-keyframes apparition {

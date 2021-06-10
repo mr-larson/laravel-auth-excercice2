@@ -6,12 +6,18 @@
     <!--Section Counts-->
     <div class="py-12">
         <h2 class="backoffice_title text-center text-white py-3 mx-10 text-4xl font-light rounded-lg shadow-lg apparition1">Section Counts</h2>
+<<<<<<< HEAD
         @can('create', App\models\Chiffre::class)
             <div class="max-w-6xl mx-auto  flex justify-center my-10 apparition1">
                 <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow hover:bg-purple-800" href="/chiffre/create">+ Create</a>
             </div>
            
        @endcan
+=======
+        <div class="max-w-6xl mx-auto  flex justify-center my-10 apparition1">
+            <a class="backoffice_btn text-white font-semibold py-2 px-4 rounded shadow hover:bg-purple-800" href="/chiffre/create">+ Create</a>
+        </div>
+>>>>>>> 4e7bdfda98f94fa4905fb4b0c52a31f162da59b8
         <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5">
 
             <!--Card-->
