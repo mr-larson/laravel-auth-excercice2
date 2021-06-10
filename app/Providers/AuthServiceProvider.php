@@ -81,12 +81,9 @@ class AuthServiceProvider extends ServiceProvider
         });
 
         //Gate Temoignage
-        Gate::define('temoignage-create', function () {
+        Gate::define('temoignage', function () {
             return in_array(Auth::user()->role_id, [1,2]);
         });
 
-        Gate::define('temoignage-edit', function () {
-            return in_array(Auth::user()->role_id, [1,2]);
-        });
     }
 }

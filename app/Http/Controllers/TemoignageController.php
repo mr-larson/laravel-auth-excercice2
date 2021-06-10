@@ -27,8 +27,8 @@ class TemoignageController extends Controller
      */
     public function create()
     {
-        $this->authorize("temoignage-create", Temoignage::class);
-        $this->authorize("create", Temoignage::class);
+        $this->authorize("temoignage", Temoignage::class);
+        
 
         return view("backoffice.temoignage.create");
     }
@@ -77,7 +77,7 @@ class TemoignageController extends Controller
      */
     public function edit(Temoignage $temoignage)
     {
-        $this->authorize("temoignage-edit", $temoignage);
+        $this->authorize("temoignage", $temoignage);
         return view("backoffice.temoignage.edit", compact("temoignage"));
     }
 
