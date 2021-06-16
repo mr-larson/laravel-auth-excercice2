@@ -16,7 +16,8 @@ class MailController extends Controller
             "message" => $request->message,
         ];
         
-        Mail::to("gauthier@test.com")->send(new FormulaireContact($contenuEmail));
+        // Mail::to("gauthier@test.com")->send(new FormulaireContact($contenuEmail));
+        Mail::to("hello@aloha.studio")->send(new FormulaireContact($contenuEmail));
         
         /* return "Message envoyé"; */
         return redirect("/#contact")->with("message_mail", "Le Message est bien envoyé");
